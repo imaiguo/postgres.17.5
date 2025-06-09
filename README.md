@@ -18,6 +18,16 @@
 ```
 
 
+# 安装 pgvector
+
+参看 https://github.com/pgvector/pgvector
+
+```bash
+> sudo apt install -y postgresql-common
+> sudo /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh
+> sudo apt install postgresql-14-pgvector
+```
+
 # Navicat连接postgresql时出现‘datlastsysoid does not exist‘报错的问题
 
  原因: Postgres 15 从pg_database表中删除了 datlastsysoid 字段引发此错误。
