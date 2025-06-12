@@ -1,6 +1,6 @@
 services:
   postgresserver:
-    # image: postgres:17.5
+    # image: postgres:17.5 navicat连接报错
     image: postgres:14.18
     container_name: postgres
     restart: always
@@ -10,7 +10,7 @@ services:
       POSTGRES_PASSWORD: 'post123'
       PGDATA: '/var/lib/postgresql/data/pgdata'
     ports:
-      - '8080:8080'
+      - '8080:5432'
     volumes:
       - '/etc/localtime:/etc/localtime'
       - '/etc/timezone:/etc/timezone'
